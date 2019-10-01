@@ -179,4 +179,15 @@ for (i = 0; i < n; i++){
   rt(360/n);
 }
 
+//5 polygons
+clear();
+var n= [3,4,5,6,7];
+
+for (i=0;i<n.length;i++){
+  for (j=1;j<i+4;j++){
+    	fd(100);
+      	lt(360/n[i]);
+    }
+}
+
 
