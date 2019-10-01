@@ -110,11 +110,15 @@ for (i = 0; i < n; i++){
 console.log(`${Low}L`);
 console.log(`${High}H`);
 
-for (i = 0; i < 4; i++){
+//8 1's and 0's in total
+for (i = 0; i < 8; i++){
+    if (i % 2  ==  0){
     console.log('0');
+    }
+    else{
     console.log('1');
 }
-
+}
 n = Number(prompt('Enter number of line '));
 for (i = 0; i < n; i++){
     if (i % 2  ==  0){
@@ -174,3 +178,5 @@ for (i = 0; i < n; i++){
   fd(100);
   rt(360/n);
 }
+
+
