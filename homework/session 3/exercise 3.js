@@ -22,26 +22,27 @@ console.log(arraySplits);
 //Clothes shop
 let item = ['Jeans', 'T-shirt', 'Socks'];
 let choice = 0;
-while (choice != 1 ){
-    choice = Number(prompt('Welcome to shop admin panel! What do you want? (C, R, U, D)'));
-if (choice == 1){
+let r,u,c,d;
+while (true ){
+    choice = prompt('Welcome to shop admin panel! What do you want? (C, R, U, D)');
+if (choice == 'r'){
         console.log('The current items are: \n');
         for (i = 0; i < item.length; i++){
         let a = Number(item.indexOf(item[i], 0));
-        console.log(`${a+1}. ${item[i]}`);
-}
-} else if (choice == 2){
+        console.log(`${a+1}. ${item[i]}`);      
+        }
+} else if (choice == 'c'){
         let updateItem = prompt('Enter the name of the new item');
         item.push(updateItem);  
         alert('Done');
-} else if (choice == 3){
+} else if (choice == 'u'){
         let updatePos = Number(prompt('Enter the position you want to update'));
         let updateName = prompt('Enter the new name');
-        item[updatePos] = updateName;
+        item[updatePos-1] = updateName;
         alert('Done!');
-} else if (choice == 4){
-        posItem = prompt('Enter position you want to delete');
-        item.splice(posItem,1);
+} else if (choice == 'd'){
+        posItem = Number(prompt('Enter position you want to delete'));
+        item.splice(posItem-1,1);
         alert('Done!');
 } else {
     alert('Wrong input')
