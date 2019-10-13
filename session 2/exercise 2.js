@@ -110,15 +110,11 @@ for (i = 0; i < n; i++){
 console.log(`${Low}L`);
 console.log(`${High}H`);
 
-//8 1's and 0's in total
-for (i = 0; i < 8; i++){
-    if (i % 2  ==  0){
+for (i = 0; i < 4; i++){
     console.log('0');
-    }
-    else{
     console.log('1');
 }
-}
+
 n = Number(prompt('Enter number of line '));
 for (i = 0; i < n; i++){
     if (i % 2  ==  0){
@@ -178,16 +174,3 @@ for (i = 0; i < n; i++){
   fd(100);
   rt(360/n);
 }
-
-//5 polygons
-clear();
-var n= [3,4,5,6,7];
-
-for (i=0;i<n.length;i++){
-  for (j=1;j<i+4;j++){
-    	fd(100);
-      	lt(360/n[i]);
-    }
-}
-
-
