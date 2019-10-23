@@ -1,0 +1,41 @@
+
+.menu {
+    background-color: #D5B0AC;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+
+}
+
+ span {
+    /* background-color: */
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} 
+.menu span  {
+    color: #402E2A;
+    font-weight: bold;
+    background-color: #D5B0AC;
+}
+
+.menu1 span {
+    display: block;
+    background-color: #D5B0AC;
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 1px 0px;
+    /* width: fit-content; */
+    
+}
+
+span:hover {
+    color: #FFFFFF;
+    background-color: #9CD08F;
+    
+}
