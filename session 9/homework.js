@@ -15,7 +15,7 @@ async function a() {
 a();
 
 
-const url = 'https://sheetdb.io/api/v1/5on4axbdztwoz';
+let url = 'https://sheetdb.io/api/v1/5on4axbdztwoz';
 fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -59,7 +59,7 @@ else {
   console.log('Passed. Bravo!');
 }
 
-let url = 'http://quotes.rest/qod.json';
+url = 'http://quotes.rest/qod.json';
 async function getQuote() {
   const connect = await fetch(url);
   const data = await connect.json();
